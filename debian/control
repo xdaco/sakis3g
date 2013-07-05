@@ -1,0 +1,19 @@
+Source: sakis3g
+Section: utils
+Priority: extra
+Maintainer: Devon Kearns <dookie@kali.org>
+Build-Depends: debhelper (>= 8.0.0), libusb-dev
+Standards-Version: 3.9.3
+Homepage: http://www.sakis3g.org
+Vcs-Git: ssh://git@git.kali.org/packages/sakis3g.git
+Vcs-Browser: http://git.kali.org/gitweb/?p=packages/sakis3g.git;a=summary
+
+Package: sakis3g
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libusb-0.1-4
+Description: Tool for establishing 3G connections
+ Sakis3G is a tweaked shell script which is supposed to work 
+ out-of-the-box for establishing a 3G connection with any 
+ combination of modem or operator. It automagically setups 
+ your USB or Bluetooth™ modem, and may even detect operator 
+ settings. You should try it when anything else fails.
